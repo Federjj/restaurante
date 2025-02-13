@@ -10,10 +10,7 @@ import { PromotionsComponent } from './components/promotions/promotions.componen
   standalone: true,
   imports: [
     RouterOutlet,
-    NavbarComponent,
-    HeroComponent,
-    PopularItemsComponent,
-    PromotionsComponent
+    NavbarComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
