@@ -7,7 +7,6 @@ import { PromotionsComponent } from '../../components/promotions/promotions.comp
 @Component({
   selector: 'app-landing',
   imports: [
-    NavbarComponent,
     HeroComponent,
     PopularItemsComponent,
     PromotionsComponent

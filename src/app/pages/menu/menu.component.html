@@ -1,1 +1,43 @@
-<p>menu works!</p>
+<div class="c-flex-col container">
+  <h1 class="c-flex-self-left m-5">Burgers</h1>
+
+  <div class="gallery">
+    <div
+      class="menu-item"
+      [ngClass]="item.price < 12 ? 'menu-item-s' : 'menu-item-l'"
+      *ngFor="let item of burgers; index as i"
+    >
+      <img src="{{item.image_path}}.png" alt="" />
+      <div class="spacer"></div>
+      <h4>{{ item.name }}</h4>
+      <h4>s/ {{ item.price }}</h4>
+    </div>
+  </div>
+  <h1 class="c-flex-self-left m-5">Pizzas</h1>
+
+  <div class="gallery">
+    <div
+      class="menu-item"
+      [ngClass]="item.price < 12 ? 'menu-item-s' : 'menu-item-l'"
+      *ngFor="let item of pizzas; index as i"
+    >
+      <img src="burger.png" alt="" />
+      <h4>item.name</h4>
+      <div>
+        <h4>s/</h4>
+        <h4>{{ item.price }}</h4>
+      </div>
+    </div>
+  </div>
+  <h1 class="c-flex-self-left m-5">Drinks</h1>
+
+  <div class="gallery">
+    <div
+      class="menu-item"
+      [ngClass]="item.price < 12 ? 'menu-item-s' : 'menu-item-l'"
+      *ngFor="let item of drinks; index as i"
+    >
+      {{ item.name }} {{ item.price }}
+    </div>
+  </div>
+</div>
