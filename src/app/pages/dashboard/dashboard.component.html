@@ -1,0 +1,98 @@
+<div class="contenedor">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link active"
+        id="inventario-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#inventario-tab-pane"
+        type="button"
+        role="tab"
+        aria-controls="inventario-tab-pane"
+        aria-selected="true"
+      >
+        <img src="icon-dashboard-storage.png" alt="">
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="ventas-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#ventas-tab-pane"
+        type="button"
+        role="tab"
+        aria-controls="ventas-tab-pane"
+        aria-selected="false"
+      >
+        <img src="icon-dashboard-sales.png" alt="">
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="promo-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#promo-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="promo-tab-pane"
+          aria-selected="false"
+        >
+          <img src="icon-dashboard-promo.png" alt="">
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="trabajadores-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#trabajadores-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="trabajadores-tab-pane"
+          aria-selected="false"
+        >
+          <img src="icon-dashboard-workers.png" alt="">
+        </button>
+      </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="inventario-tab-pane"
+      role="tabpanel"
+      aria-labelledby="inventario-tab"
+      tabindex="0"
+    >
+      <app-inventario></app-inventario>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="ventas-tab-pane"
+      role="tabpanel"
+      aria-labelledby="ventas-tab"
+      tabindex="0"
+    >
+      ventas
+    </div>
+    <div
+      class="tab-pane fade"
+      id="promo-tab-pane"
+      role="tabpanel"
+      aria-labelledby="promo-tab"
+      tabindex="0"
+    >
+      promo
+    </div>
+    <div
+      class="tab-pane fade"
+      id="trabajadores-tab-pane"
+      role="tabpanel"
+      aria-labelledby="trabajadores-tab"
+      tabindex="0"
+    >
+      trabajadores
+    </div>
+  </div>
+</div>

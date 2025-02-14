@@ -1,5 +1,10 @@
 <div class="c-flex-col container">
-  <h1 class="c-flex-self-left m-5">Burgers</h1>
+  <div class="c-flex-self-left m-5 c-flex-row gap-4">
+    <div class="c-icon">
+      <img src="icon-burger.png" alt="">
+    </div>
+    <h1>Hamburgesas</h1>
+  </div>
 
   <div class="gallery">
     <div
@@ -13,7 +18,13 @@
       <h4>s/ {{ item.price }}</h4>
     </div>
   </div>
-  <h1 class="c-flex-self-left m-5">Pizzas</h1>
+
+  <div class="c-flex-self-left m-5 c-flex-row gap-4">
+    <div class="c-icon">
+      <img src="icon-pizza.png" alt="">
+    </div>
+    <h1>Pizzas</h1>
+  </div>
 
   <div class="gallery">
     <div
@@ -21,15 +32,18 @@
       [ngClass]="item.price < 12 ? 'menu-item-s' : 'menu-item-l'"
       *ngFor="let item of pizzas; index as i"
     >
-      <img src="burger.png" alt="" />
-      <h4>item.name</h4>
-      <div>
-        <h4>s/</h4>
-        <h4>{{ item.price }}</h4>
-      </div>
+      <img src="{{item.image_path}}.png" alt="" />
+      <div class="spacer"></div>
+      <h4>{{ item.name }}</h4>
+      <h4>s/ {{ item.price }}</h4>
     </div>
   </div>
-  <h1 class="c-flex-self-left m-5">Drinks</h1>
+  <div class="c-flex-self-left m-5 c-flex-row gap-4">
+    <div class="c-icon">
+      <img src="icon-drink.png" alt="">
+    </div>
+    <h1>Bebidas</h1>
+  </div>
 
   <div class="gallery">
     <div
@@ -37,7 +51,10 @@
       [ngClass]="item.price < 12 ? 'menu-item-s' : 'menu-item-l'"
       *ngFor="let item of drinks; index as i"
     >
-      {{ item.name }} {{ item.price }}
+    <img src="{{item.image_path}}.png" alt="" />
+    <div class="spacer"></div>
+    <h4>{{ item.name }}</h4>
+    <h4>s/ {{ item.price }}</h4>
     </div>
   </div>
 </div>

@@ -6,11 +6,42 @@ $secondary-color: #FFD700;
 $text-color: #333;
 $light-bg: #fff;
 
+.custom-bordeado {
+  border: 4px solid red !important;
+  border-radius: .5em !important;
+}
+
+.c-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-nonav {
+  height: calc(100% - 4em);
+}
+
+.c-flex-self-left {
+  align-self: self-start;
+}
+
 // Global styles
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   color: $text-color;
+}
+
+body,html {
+  height: 100% !important;
 }
 
 .bg-primary-custom {
