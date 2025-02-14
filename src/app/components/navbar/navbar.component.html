@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-primary-custom">
+<nav *ngIf="loggedIn" class="navbar navbar-expand-lg bg-primary-custom">
     <div class="container">
         <a class="navbar-brand text-white" routerLink="">{{ brandName }}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

@@ -10,9 +10,12 @@ import { RouterLink, Router } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  loggedIn:boolean;
   brandName = 'Finsweet';
 
-  constructor(private router: Router){}
+  constructor(private router: Router){
+    this.loggedIn = false;
+  }
 
   goToLogin() {
     this.router.navigateByUrl("/login")
